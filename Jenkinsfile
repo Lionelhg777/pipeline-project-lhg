@@ -20,7 +20,7 @@ pipeline {
                 bat "del C:\\Users\\ljhernandez\\Desktop\\formacion_Jenkins\\apache-tomcat-8.5.78\\webapps\\webapp.war"
                 
                 // Deploy webapp (new version)
-                bat "copy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\hhh\\webapp\\target\\webapp.war C:\\Users\\ljhernandez\\Desktop\\formacion_Jenkins\\apache-tomcat-8.5.78\\webapps\\webapp.war"
+                bat "copy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Pipeline-Build-Deploy\\webapp\\target\\webapp.war C:\\Users\\ljhernandez\\Desktop\\formacion_Jenkins\\apache-tomcat-8.5.78\\webapps\\webapp.war"
                 sleep 30
             }
         }
