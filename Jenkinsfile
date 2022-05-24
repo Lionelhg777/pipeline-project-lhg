@@ -17,10 +17,10 @@ pipeline {
         stage('Deploy Tomcat') {
             steps {
                 // Clean webapp Tomcat (old version)
-                bat "del :\\Users\\ljhernandez\\Desktop\\formacion_Jenkins\\workspace\\apache-tomcat-8.5.78\\apache-tomcat-8.5.78\\webapps\\webapp.war"
+                bat "del C:\\Users\\ljhernandez\\Desktop\\formacion_Jenkins\\workspace\\apache-tomcat-8.5.78\\apache-tomcat-8.5.78\\webapps\\webapp.war"
                 
                 // Deploy webapp (new version)
-                bat "copy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Pipeline-Build-Deploy\\webapp\\target\\webapp.war :\\Users\\ljhernandez\\Desktop\\formacion_Jenkins\\workspace\\apache-tomcat-8.5.78\\apache-tomcat-8.5.78\\webapps\\webapp.war"
+                bat "copy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Pipeline-Build-Deploy\\webapp\\target\\webapp.war C:\\Users\\ljhernandez\\Desktop\\formacion_Jenkins\\workspace\\apache-tomcat-8.5.78\\apache-tomcat-8.5.78\\webapps\\webapp.war"
                 sleep 30
             }
         }
